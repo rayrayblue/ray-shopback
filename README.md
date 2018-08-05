@@ -42,6 +42,7 @@ You could use above 5 methods to chain any rule you need.
 
 3.
 I define two flex method fot this requiement:
+Method 1:
 ```Javascript
 module.exports.flexCheckTagNumLimit = function (content, tag, limit){
     var result = checkTagNumLimit(content, tag, limit);
@@ -50,12 +51,14 @@ module.exports.flexCheckTagNumLimit = function (content, tag, limit){
     }
 };
 ```
-Example: If I want to detect if there have more than 50 img tag:
+Example: If I want to detect if there have more than 50 img tag...
 
 ```Javascript
 flexCheckTagNumLimit('./test.html', 'img', 50)
 ```
 
+
+Method 2:
 ```Javascript
 module.exports.flexCheckNumOfTagWithoutAttr = function (content, tag, attr) {
     var num = getNumOfTagWithoutAttr(content, tag, attr);
@@ -66,5 +69,5 @@ module.exports.flexCheckNumOfTagWithoutAttr = function (content, tag, attr) {
 ```
 Example: If I want to detect any img without id attr...
 ```Javascript
-flexCheckTagNumLimit('./test.html', 'img', 'id')
+flexCheckNumOfTagWithoutAttr('./test.html', 'img', 'id')
 ```
