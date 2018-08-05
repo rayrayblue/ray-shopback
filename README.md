@@ -39,6 +39,7 @@ npm install ray-shopback
 ```
 2.
 You could use above 5 methods to chain any rule you need.
+
 3.
 I define two flex method fot this requiement:
 ```Javascript
@@ -48,4 +49,22 @@ module.exports.flexCheckTagNumLimit = function (content, tag, limit){
         outputFormatForCheckTagNum(tag, limit);
     }
 };
+```
+Example: If I want to detect if there have more than 50 img tag:
+
+```Javascript
+flexCheckTagNumLimit('./test.html', 'img', 50)
+```
+
+```Javascript
+module.exports.flexCheckNumOfTagWithoutAttr = function (content, tag, attr) {
+    var num = getNumOfTagWithoutAttr(content, tag, attr);
+    if(num > 0){
+        outputFormatForCheckAttr(tag, attr, num);
+    }
+};
+```
+Example: If I want to detect any img without id attr...
+```Javascript
+flexCheckTagNumLimit('./test.html', 'img', 'id')
 ```
