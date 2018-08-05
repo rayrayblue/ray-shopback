@@ -32,7 +32,6 @@ module.exports.checkHeadTag = function(content) {
         var notExist = true
         for (var j = metaList.length - 1; j >= 0; j--) {
             if($(metaList[j]).attr('name') == metaNameList[i]){
-                console.log('qqqq')
                 notExist = false
             }
         }
