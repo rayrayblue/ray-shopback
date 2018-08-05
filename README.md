@@ -44,7 +44,9 @@ You could use above 5 methods to chain any rule you need.
 
 3.
 I define two flex method fot this requiement:
-Method 1:
+
+Method 1
+-----
 ```Javascript
 module.exports.flexCheckTagNumLimit = function (content, tag, limit){
     var result = checkTagNumLimit(content, tag, limit);
@@ -61,6 +63,7 @@ flexCheckTagNumLimit('./test.html', 'img', 50)
 
 
 Method 2:
+-----
 ```Javascript
 module.exports.flexCheckNumOfTagWithoutAttr = function (content, tag, attr) {
     var num = getNumOfTagWithoutAttr(content, tag, attr);
