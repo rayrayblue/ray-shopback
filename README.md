@@ -1,4 +1,4 @@
 # ray-shopback
-```
-echo "hello GitHub" #Bash
+```Bash
+npm install ray-shopback
 ```
