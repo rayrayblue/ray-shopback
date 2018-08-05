@@ -2,10 +2,12 @@
 Input should be a HTML file, the result will print in the console.
 
 Installation
+=====
 ```Bash
 npm install ray-shopback
 ```
 Use Case:
+=====
 
 Rule 1
 ```Node.js
@@ -32,7 +34,7 @@ Rule 5
 ray-shopback.checkH1tagNumLimit('./test.html');
 ```
 Development Requiement
-
+=====
 1. 
 ```Bash
 npm install ray-shopback
@@ -71,3 +73,15 @@ Example: If I want to detect any img without id attr...
 ```Javascript
 flexCheckNumOfTagWithoutAttr('./test.html', 'img', 'id')
 ```
+
+6. 
+If you want to add more rule for meta tag, you could simply modify the list in line 22 index.js file.
+```JavaScript
+metaNameList = ['descriptions', 'keywords'];
+```
+Example: If I want to add name='robots'...
+
+```JavaScript
+metaNameList = ['descriptions', 'keywords', 'robots'];
+```
+
