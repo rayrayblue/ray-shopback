@@ -82,7 +82,7 @@ If you want to add more rule for meta tag, you could simply modify the list in l
 ```JavaScript
 metaNameList = ['descriptions', 'keywords'];
 ```
-Example: If I want to add name='robots'...
+Example: If I want to check name='robots' is exist or not...
 
 ```JavaScript
 metaNameList = ['descriptions', 'keywords', 'robots'];
