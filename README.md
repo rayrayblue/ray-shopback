@@ -1,2 +1,2 @@
 # ray-shopback
-ttt
+echo "hello GitHub" #Bash
