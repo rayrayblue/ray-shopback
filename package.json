@@ -1,0 +1,22 @@
+{
+  "name": "ray-shopback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayrayblue/ray-shopback.git"
+  },
+  "author": "Blue Ray Ray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rayrayblue/ray-shopback/issues"
+  },
+  "homepage": "https://github.com/rayrayblue/ray-shopback#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  }
+}
